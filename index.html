@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Burger Artesanal - Seu Hambúrguer Perfeito</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🍔 Burger Artesanal</div>
+      <div class="tagline">
+        O hambúrguer feito com amor e ingredientes selecionados!
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Seção de Menu de Hambúrgueres -->
+      <section class="menu-section">
+        <h2>Nossos Hambúrgueres</h2>
+        <div class="burgers-grid" id="burgers-container">
+          <!-- Os hambúrgueres serão carregados aqui via JavaScript -->
+        </div>
+      </section>
+
+      <!-- Seção do Carrinho -->
+      <section class="cart-section" id="cart-section">
+        <h2>🛒 Seu Pedido</h2>
+        <div id="cart-items" class="cart-items">
+          <!-- Itens do carrinho serão adicionados aqui -->
+          <div class="empty-cart">
+            Seu carrinho está vazio. Adicione alguns hambúrgueres!
+          </div>
+        </div>
+        <div class="cart-total">
+          Total: <span id="total-price">R$ 0,00</span>
+        </div>
+      </section>
+
+      <!-- Seção de Finalização do Pedido -->
+      <section class="checkout-section">
+        <h2>📝 Finalizar Pedido</h2>
+
+        <div class="form-group">
+          <label for="customer-name">Nome Completo *</label>
+          <input type="text" id="customer-name" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+          <label for="customer-phone">WhatsApp para Contato *</label>
+          <input
+            type="tel"
+            id="customer-phone"
+            class="form-control"
+            placeholder="(XX) XXXXX-XXXX"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="customer-address">Endereço Completo *</label>
+          <textarea
+            id="customer-address"
+            class="form-control"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="customer-observation">Observações (opcional)</label>
+          <textarea
+            id="customer-observation"
+            class="form-control"
+            rows="2"
+          ></textarea>
+        </div>
+
+        <h3>Forma de Pagamento</h3>
+        <div class="payment-methods">
+          <div class="payment-method" data-payment="pix">
+            <div>📱 PIX</div>
+            <small>Desconto de 5%</small>
+          </div>
+          <div class="payment-method" data-payment="debit">
+            <div>💳 Débito</div>
+            <small>Na entrega</small>
+          </div>
+          <div class="payment-method" data-payment="credit">
+            <div>💳 Crédito</div>
+            <small>Na entrega</small>
+          </div>
+          <div class="payment-method" data-payment="cash">
+            <div>💵 Dinheiro</div>
+            <small
+              >Troco para:
+              <input
+                type="number"
+                id="change-for"
+                class="form-control"
+                placeholder="R$"
+                min="0"
+                style="width: 80px; display: inline; margin-top: 5px"
+            /></small>
+          </div>
+        </div>
+
+        <button id="submit-order" class="submit-order">
+          Enviar Pedido via WhatsApp
+        </button>
+      </section>
+    </div>
+
+    <footer>
+      <p>🍔 Burger Artesanal &copy; 2023 - Todos os direitos reservados</p>
+      <p>Tempo estimado de entrega: 30-45 minutos</p>
+    </footer>
+
+    <!-- Ícone flutuante do carrinho (aparece apenas em mobile) -->
+    <div class="cart-floating-icon" id="cart-floating-icon">
+      <a href="#cart-section">🛒 <span class="cart-count" id="cart-count">0</span></a>
+    </div>
+  </body>
+</html>

@@ -359,7 +359,7 @@ function submitOrder() {
     // Número do entregador (substitua pelo número real)
     // O número deve estar no formato internacional sem espaços, parênteses ou traços
     // Exemplo: 5511987654321 para um número brasileiro
-    const deliveryPhoneNumber = "5521995361367"; // Substitua pelo número real do entregador
+    const deliveryPhoneNumber = "21973970261"; // Substitua pelo número real do entregador
 
     // Abrir WhatsApp
     window.open(

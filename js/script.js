@@ -60,6 +60,12 @@ const burgers = [
 let cart = [];
 let selectedPayment = null;
 
+// Sinaliza a quantidade de itens no carrinho
+function cartNumberItens() {
+  const cartCount = document.getElementById("cart-count");
+       cartCount.textContent = cart.length;
+}
+
 // Carregar hambúrgueres na página
 function loadBurgers() {
   const container = document.getElementById("burgers-container");
@@ -230,17 +236,17 @@ function updateCart() {
 
   totalPriceElement.textContent = `R$ ${total.toFixed(2).replace(".", ",")}`;
 
-  const cartCount = document.getElementById("cart-count");
-
   // Mostra itens no icone do carrinho
-  cartCount.textContent = cart.length;
+  cartNumberItens()
 }
 
 // Remover item do carrinho
 function removeItemFromCart(e) {
   const index = parseInt(e.target.getAttribute("data-index"));
   cart.splice(index, 1);
+  
   updateCart();
+  cartNumberItens()
 }
 
 // Selecionar método de pagamento

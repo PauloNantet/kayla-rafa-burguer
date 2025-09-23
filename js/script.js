@@ -7,8 +7,7 @@ const burgers = [
     name: "Cheddar King",
     description: "Pão, carne, queijo cheddar, molho da casa.",
     price: 7,
-    image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/burger1.webp", // 300 x 200
   },
   {
     id: 2,
@@ -16,8 +15,7 @@ const burgers = [
     description:
       "Pão, carne, queijo, bacon, alface, ketchup, batata e maionese.",
     price: 16,
-    image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/burger2.webp",
   },
   {
     id: 3,
@@ -25,8 +23,7 @@ const burgers = [
     description:
       "Pão, 2 carnes, 2 ovos, queijo cheddar, presunto, linguiça, bacon, alface, ketchup, batata e maionese.",
     price: 16,
-    image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/burger3.webp",
   },
   {
     id: 4,
@@ -34,8 +31,7 @@ const burgers = [
     description:
       "Pão, carne, ovo, queijo, presunto, bacon, calabresa, alface, ketchup, batata e maionese.",
     price: 14,
-    image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/burger4.webp",
   },
   {
     id: 5,
@@ -43,8 +39,7 @@ const burgers = [
     description:
       "Pão, 1 carne, ovo, 1 queijo, 1 presunto, calabresa, alface, ketchup, batata e maionese.",
     price: 15,
-    image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/burger5.webp",
   },
   {
     id: 6,
@@ -52,8 +47,7 @@ const burgers = [
     description:
       "Pão, 2 carnes, ovo, 2 queijos, 2 presuntos, bacon, calabresa, alface, ketchup, batata, cream cheese, requeijão cremoso, ovo de codorna, milho, azeitona.",
     price: 19,
-    image:
-      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/burger6.webp",
   },
 ];
 
@@ -66,33 +60,29 @@ const drinks = [
     name: "Refrigerante 350ml",
     description: "Coca-Cola, Pepsi, Fanta ou Guaraná",
     price: 6,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/drink1.webp",
   },
   {
     id: 2,
     name: "Suco Natural 400ml",
     description: "Laranja, Limão, Abacaxi ou Uva",
     price: 8,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/drink1.webp",
   },
   {
     id: 3,
     name: "Água Mineral 500ml",
     description: "Sem gás ou com gás",
     price: 4,
-    image:
-      "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+    image: "./assets/images/drink1.webp",
   },
   {
     id: 4,
     name: "Cerveja Artesanal 300ml",
     description: "Loira, IPA ou Stout — consulta disponibilidade",
     price: 12,
-    image:
-    "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-},
+    image: "./assets/images/drink1.webp",
+  },
 ];
 
 // ========================================

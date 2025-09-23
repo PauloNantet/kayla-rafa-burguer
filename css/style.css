@@ -1,12 +1,18 @@
-/* Importando fontes */
+/* ========================================
+   Burger Artesanal — Estilos Globais
+   ======================================== */
+
+/* Importando fontes do Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
 
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos globais do corpo */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fafafa;
@@ -14,7 +20,9 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* ========================================
+   HEADER
+   ======================================== */
 header {
   background: linear-gradient(135deg, #d32f2f, #b71c1c);
   color: white;
@@ -23,8 +31,9 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-header img{
+header img {
   width: 100px;
+  margin-bottom: 1rem;
 }
 
 header .logo {
@@ -40,7 +49,9 @@ header .tagline {
   opacity: 0.9;
 }
 
-/* Container principal */
+/* ========================================
+   CONTAINER PRINCIPAL
+   ======================================== */
 .container {
   max-width: 1200px;
   margin: 2rem auto;
@@ -50,7 +61,9 @@ header .tagline {
   gap: 2rem;
 }
 
-/* Seção de Hambúrgueres */
+/* ========================================
+   SEÇÕES DE MENU (HAMBÚRGUERES E BEBIDAS)
+   ======================================== */
 .menu-section h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
@@ -59,12 +72,15 @@ header .tagline {
   text-align: center;
 }
 
-.burgers-grid {
+/* Grade de cards — usada para hambúrgueres e bebidas */
+.burgers-grid,
+.drinks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
+/* Estilo do card — reutilizado para ambos */
 .burger-card {
   background: white;
   border-radius: 12px;
@@ -125,7 +141,9 @@ header .tagline {
   background-color: #b71c1c;
 }
 
-/* Carrinho */
+/* ========================================
+   CARRINHO — AJUSTADO PARA ALINHAR PREÇOS
+   ======================================== */
 .cart-section {
   background: white;
   padding: 1.5rem;
@@ -151,9 +169,9 @@ header .tagline {
   font-style: italic;
 }
 
+/* --- Ajuste principal aqui --- */
 .cart-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0.75rem 0;
   border-bottom: 1px dashed #eee;
@@ -163,8 +181,21 @@ header .tagline {
   border-bottom: none;
 }
 
+.cart-item-info {
+  flex: 1;
+  margin-right: 1rem;
+}
+
 .cart-item-name {
   font-weight: 500;
+  font-size: 1rem;
+}
+
+.cart-item-price {
+  font-weight: 600;
+  color: #d32f2f;
+  min-width: 80px; /* Garante coluna de preço fixa */
+  text-align: right;
 }
 
 .remove-item {
@@ -173,6 +204,8 @@ header .tagline {
   color: #d32f2f;
   cursor: pointer;
   font-size: 1.2rem;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
 }
 
 .cart-total {
@@ -181,9 +214,13 @@ header .tagline {
   text-align: right;
   color: #b71c1c;
   margin: 1rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
 }
 
-/* Checkout */
+/* ========================================
+   CHECKOUT (FORMULÁRIO)
+   ======================================== */
 .checkout-section {
   background: white;
   padding: 2rem;
@@ -276,7 +313,9 @@ header .tagline {
   background-color: #128c7e;
 }
 
-/* Footer */
+/* ========================================
+   FOOTER
+   ======================================== */
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -290,7 +329,19 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* Ícone flutuante do carrinho (mobile) */
+footer a {
+  color: #E1306C;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   ÍCONE FLUTUANTE DO CARRINHO (MOBILE)
+   ======================================== */
 .cart-floating-icon {
   display: none;
   position: fixed;
@@ -333,7 +384,9 @@ footer p {
   100% { transform: scale(1); }
 }
 
-/* Responsividade */
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
 @media (max-width: 768px) {
   .container {
     padding: 0 0.8rem;
@@ -358,7 +411,8 @@ footer p {
     font-size: 1.5rem;
   }
 
-  .burgers-grid {
+  .burgers-grid,
+  .drinks-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
